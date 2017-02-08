@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E1E0EC21E452DE300328410 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E0EC11E452DE300328410 /* ItemCell.swift */; };
+		9E21D2751E4A914F000240AB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E21D2741E4A914F000240AB /* DetailViewController.swift */; };
 		9E4D2CD21E427BE40092147F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D2CD11E427BE40092147F /* AppDelegate.swift */; };
 		9E4D2CD71E427BE40092147F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D2CD51E427BE40092147F /* Main.storyboard */; };
 		9E4D2CD91E427BE40092147F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D2CD81E427BE40092147F /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		9E1E0EC11E452DE300328410 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		9E21D2741E4A914F000240AB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9E4D2CCE1E427BE40092147F /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4D2CD11E427BE40092147F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E4D2CD61E427BE40092147F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				9E4D2D031E42840B0092147F /* ItemStore.swift */,
 				9E4D2CD81E427BE40092147F /* Assets.xcassets */,
 				9E4D2CDD1E427BE40092147F /* Info.plist */,
+				9E21D2741E4A914F000240AB /* DetailViewController.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				9E4D2D001E427DAF0092147F /* ItemsViewController.swift in Sources */,
 				9E4D2D021E427EB90092147F /* Item.swift in Sources */,
 				9E4D2D041E42840B0092147F /* ItemStore.swift in Sources */,
+				9E21D2751E4A914F000240AB /* DetailViewController.swift in Sources */,
 				9E4D2CD21E427BE40092147F /* AppDelegate.swift in Sources */,
 				9E1E0EC21E452DE300328410 /* ItemCell.swift in Sources */,
 			);
