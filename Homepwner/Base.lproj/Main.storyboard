@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="00E-2m-ddU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Yev-za-iqz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Items View Controller-->
+        <!--Homepwner-->
         <scene sceneID="4Af-14-7jC">
             <objects>
                 <tableViewController id="00E-2m-ddU" customClass="ItemsViewController" customModule="Homepwner" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,10 +97,17 @@
                             <outlet property="delegate" destination="00E-2m-ddU" id="LGJ-VW-wRJ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Homepwner" id="xFe-Fh-kUW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="y0a-eB-cdu">
+                            <connections>
+                                <action selector="addNewItem:" destination="00E-2m-ddU" id="N1C-zH-cla"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vd7-sU-oSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109.59999999999999" y="9.4452773613193415"/>
+            <point key="canvasLocation" x="1048.8" y="9.4452773613193415"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="a60-WH-Rfe">
@@ -115,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1cP-Q7-zyo">
-                                <rect key="frame" x="16" y="8" width="343" height="651"/>
+                                <rect key="frame" x="16" y="64" width="343" height="595"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HeP-30-Nbi">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -126,11 +133,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQr-Hv-bp1">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQr-Hv-bp1" customClass="CustomTextField" customModule="Homepwner" customModuleProvider="target">
                                                 <rect key="frame" x="53" y="0.0" width="290" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="xRq-N9-Bki" id="GIR-RV-Bnv"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -143,11 +153,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPz-Sc-p57">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPz-Sc-p57" customClass="CustomTextField" customModule="Homepwner" customModuleProvider="target">
                                                 <rect key="frame" x="53" y="0.0" width="290" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="xRq-N9-Bki" id="HHv-zj-esR"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -160,16 +173,19 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFD-Qy-9y3">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFD-Qy-9y3" customClass="CustomTextField" customModule="Homepwner" customModuleProvider="target">
                                                 <rect key="frame" x="53" y="0.0" width="290" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="xRq-N9-Bki" id="hN0-56-g55"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtB-Fw-l8z">
-                                        <rect key="frame" x="0.0" y="114" width="343" height="537"/>
+                                        <rect key="frame" x="0.0" y="114" width="343" height="481"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -182,12 +198,16 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="1cP-Q7-zyo" firstAttribute="leading" secondItem="t3m-Or-a4O" secondAttribute="leadingMargin" id="6Fd-mq-R21"/>
                             <constraint firstItem="1cP-Q7-zyo" firstAttribute="trailing" secondItem="t3m-Or-a4O" secondAttribute="trailingMargin" id="9vh-yJ-X2s"/>
-                            <constraint firstItem="1cP-Q7-zyo" firstAttribute="top" secondItem="t3m-Or-a4O" secondAttribute="topMargin" constant="8" id="BC3-hg-0VV"/>
+                            <constraint firstItem="1cP-Q7-zyo" firstAttribute="top" secondItem="Ey2-pI-MWv" secondAttribute="bottom" id="WNI-fw-b5P"/>
                             <constraint firstItem="Q6i-Mu-ZRL" firstAttribute="top" secondItem="1cP-Q7-zyo" secondAttribute="bottom" constant="8" id="qrU-8A-lad"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="axe-lh-ujj" appends="YES" id="xdm-eB-sTe"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="HtB-Fw-l8z" id="OuP-Db-6pA"/>
@@ -197,8 +217,31 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQI-uq-c6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="axe-lh-ujj">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="xRq-N9-Bki" id="QYh-4N-OHX"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="916" y="8.5457271364317844"/>
+            <point key="canvasLocation" x="1834" y="9"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iBF-fe-Z4T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yev-za-iqz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hyr-be-rSL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="00E-2m-ddU" kind="relationship" relationship="rootViewController" id="xLL-Ce-Rb4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HF5-s1-wSG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="9.4452773613193415"/>
         </scene>
     </scenes>
 </document>
