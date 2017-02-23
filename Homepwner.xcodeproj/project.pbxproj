@@ -18,6 +18,7 @@
 		9E4D2D001E427DAF0092147F /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D2CFF1E427DAF0092147F /* ItemsViewController.swift */; };
 		9E4D2D021E427EB90092147F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D2D011E427EB90092147F /* Item.swift */; };
 		9E4D2D041E42840B0092147F /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D2D031E42840B0092147F /* ItemStore.swift */; };
+		9E960A2B1E551AE80088CD95 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E960A2A1E551AE80088CD95 /* ImageStore.swift */; };
 		9EBCF7431E4BCFD500BEF48C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBCF7421E4BCFD500BEF48C /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		9E4D2CFF1E427DAF0092147F /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		9E4D2D011E427EB90092147F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9E4D2D031E42840B0092147F /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		9E960A2A1E551AE80088CD95 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		9EBCF7421E4BCFD500BEF48C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				9E4D2CFF1E427DAF0092147F /* ItemsViewController.swift */,
 				9E1E0EC11E452DE300328410 /* ItemCell.swift */,
 				9E4D2D031E42840B0092147F /* ItemStore.swift */,
+				9E960A2A1E551AE80088CD95 /* ImageStore.swift */,
 				9E4D2CD81E427BE40092147F /* Assets.xcassets */,
 				9E4D2CDD1E427BE40092147F /* Info.plist */,
 				9E21D2741E4A914F000240AB /* DetailViewController.swift */,
@@ -280,6 +283,7 @@
 				9EBCF7431E4BCFD500BEF48C /* CustomTextField.swift in Sources */,
 				9E4D2D001E427DAF0092147F /* ItemsViewController.swift in Sources */,
 				9E4D2D021E427EB90092147F /* Item.swift in Sources */,
+				9E960A2B1E551AE80088CD95 /* ImageStore.swift in Sources */,
 				9E4D2D041E42840B0092147F /* ItemStore.swift in Sources */,
 				9E21D2751E4A914F000240AB /* DetailViewController.swift in Sources */,
 				9E4D2CD21E427BE40092147F /* AppDelegate.swift in Sources */,
